@@ -1,0 +1,34 @@
+program MemoryOptimizationExample;
+
+type
+  TIntegerArray = array of Integer;
+
+var
+  Numbers: TIntegerArray;
+  i, n: Integer;
+
+begin
+  // Запрашиваем у пользователя количество элементов
+  Write('Enter the number of elements: ');
+  ReadLn(n);
+
+  // Инициализация динамического массива
+  SetLength(Numbers, n);
+
+  // Заполнение массива значениями
+  for i := 0 to n - 1 do
+  begin
+    Numbers[i] := i * 2; // Просто пример заполнения
+  end;
+
+  // Вывод значений массива
+  for i := 0 to n - 1 do
+  begin
+    WriteLn('Element ', i, ': ', Numbers[i]);
+  end;
+
+  // Освобождение памяти, занятой массивом
+  SetLength(Numbers, 0);
+
+  WriteLn('Memory has been optimized and freed.');
+end.
