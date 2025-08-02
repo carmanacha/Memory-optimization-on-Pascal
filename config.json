@@ -1,0 +1,32 @@
+{
+  "min_delay": 60,
+  "max_delay": 300,
+  "transaction_amount_min": 0.001,
+  "transaction_amount_max": 0.01,
+  "headless": false,
+  "implicit_wait": 15,
+  "page_load_timeout": 45,
+  "networks_to_use": [
+    "ethereum",
+    "arbitrum",
+    "polygon",
+    "cosmos",
+    "osmosis"
+  ],
+  "max_transactions_per_session": 3,
+  "wallet_passwords": {
+    "metamask": "",
+    "keplr": ""
+  },
+  "chrome_profile_path": "",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "proxy": {
+    "enabled": false,
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": ""
+  },
+  "retry_attempts": 3,
+  "screenshot_on_error": true
+}
